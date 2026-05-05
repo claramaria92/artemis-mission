@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Artemis - NASA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3d 50%, #16213e 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,212,255,0.2);
+        }
+        .logo {
+           
+        }
+        h1 { 
+            color: #00d4ff; 
+            font-size: 2.8em; 
+            text-shadow: 0 0 20px #00d4ff;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        /* CONTEÚDO */
+        .content {
+            background: rgba(255,255,255,0.08);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(0,212,255,0.3);
+            backdrop-filter: blur(10px);
+        }
+        .mission-text {
+            font-size: 1.2em;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .objectives {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .objective {
+            background: rgba(0,212,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        /* GALERIA */
+        .gallery-title {
+            text-align: center;
+            font-size: 2.2em;
+            color: #00d4ff;
+            margin: 40px 0 30px 0;
+            text-shadow: 0 0 10px #00d4ff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .gallery-item {
+            background: rgba(0,0,0,0.4);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            border-color: #00d4ff;
+            box-shadow: 0 20px 40px rgba(0,212,255,0.3);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+        .caption {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            background: rgba(0,212,255,0.1);
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">🌕 ARTEMIS</div>
+            <h1>🚀 Missão Artemis</h1>
+            <p class="subtitle">Retorno Histórico da Humanidade à Lua</p>
+        </header>
+
+        <!-- CONTEÚDO -->
+        <div class="content">
+            <div class="mission-text">
+                <strong>A Missão Artemis</strong> é o programa da NASA para levar a primeira mulher e a próxima pessoa de cor à Lua. 
+                Após Artemis I (concluída com sucesso), Artemis II fará o primeiro voo tripulado em 2025, e Artemis III pousará humanos na Lua em 2026.
+            </div>
+
+            <div class="objectives">
+                <div class="objective">🧑‍🚀 1ª mulher na Lua</div>
+                <div class="objective">🌕 Artemis I ✅ Concluída</div>
+                <div class="objective">🚀 Artemis II - 2025</div>
+                <div class="objective">🏗️ Artemis III - 2026</div>
+                <div class="objective">🛰️ Estação Gateway</div>
+            </div>
+
+            <h2 class="gallery-title">📸 Galeria Oficial</h2>
+            
+            <div class="gallery">
+                <!-- 1. SLS Rocket -->
+                <div class="gallery-item">
+                    <img src="https://cdn.geekwire.com/wp-content/uploads/2017/06/170629-sls-flight.jpg" alt="SLS">
+                    <div class="caption">SLS Space Launch System</div>
+                </div>
+
+                <!-- 2. Orion (IMAGEM GARANTIDA) -->
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwHNB9871HJa4VA0-IBVruqjcEG8fWxTWjQ&s" alt="Orion">
+                    <div class="caption">Nave Orion Artemis II</div>
+                </div>
+
+                <!-- 3. Lua -->
+                <div class="gallery-item">
+                    <img src="https://img.magnific.com/fotos-gratis/planeta-terra-fotorrealista_23-2151075904.jpg?w=360" alt="Lua">
+                    <div class="caption">Superfície Lunar</div>
+                </div>
+
+                <!-- 4. Gateway -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Gateway">
+                    <div class="caption">Estação Gateway</div>
+                </div>
+
+                <!-- 5. Astronauta -->
+                <div class="gallery-item">
+                    <img src="https://static.poder360.com.br/2023/08/astronauta-lua-missao-artemis-848x477.jpeg" alt="Astronauta">
+                    <div class="caption">Astronauta Artemis III</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
